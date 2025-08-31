@@ -50,11 +50,17 @@ Filter and process the collected data depending on the given requirements by usi
 c) Visualization
 Finally, create a Dashboard by using Streamlit and applying selection and dropdown options on the Dashboard and show the output are Geo visualization, bar chart, and Dataframe Table
 User Guide
-Step 1.
-Select any one option fron All India or State wise or Top Ten categories.
-Step 2.
-Select any one option fron Transaction or User.
-Step 3.
-Select any Year, Quarter and additional required option.
-Step 4.
-Finally, You get the Geo Visualization Analysis or Bar chart Analysis and Table format Analysis.3
+
+The image displays a Streamlit application for "Total Transaction Amount Analysis". To use this Streamlit application, follow these steps: 
+Step 1:
+Access the Application: Open the Streamlit application in your web browser. This typically happens automatically when you run the Streamlit script, or you might navigate to a specific URL where it's deployed. 
+Step2:
+Select Year: Locate the "Year" dropdown menu, which is currently showing "2018" in the image. Click on this dropdown to select a different year if you wish to analyze data from a different period. 
+Step3:
+Select Quarter: Locate the "Quarter" input field, which is currently showing "1" in the image. You can change this value to select a specific quarter for your analysis within the chosen year. 
+Step4:
+View Analysis: After selecting the desired year and quarter, the application will automatically update the visualizations for "Overall State Data - Transactions Amount" and "Overall State Data - Transactions Count" based on your selections. 
+Step5:
+Interpret Visualizations: Examine the two map-based visualizations to understand the transaction amount and count data across different states, as depicted by the color intensity or other visual cues on the map of India.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/402c296b-8029-4d83-8198-598fd6a44329" /># Archana--Project-1-Phonepe
