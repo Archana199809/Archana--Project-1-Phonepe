@@ -25,7 +25,6 @@ We create a web app to analyse the Phonepe transaction and users depending on va
   **b) Data Handling & Analysis**
   - pandas
   - json
-  - tomllib
   
   **c) Web Development & APIs**
   - streamlit
