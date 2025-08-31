@@ -7,7 +7,6 @@ import requests
 import psycopg2
 import plotly.express as px
 from PIL import Image
-import tomllib
 import emoji
 
  # Connection Parameters
@@ -535,3 +534,4 @@ elif page =="Business Case Study":
             fig.update_traces(textposition='inside', textinfo='percent+label')
 
             st.plotly_chart(fig,use_container_width=True)
+
