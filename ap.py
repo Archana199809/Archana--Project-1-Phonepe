@@ -6,7 +6,6 @@ import streamlit as st
 import requests
 import psycopg2
 import plotly.express as px
-import plotly.graph_objects as go
 from PIL import Image
 import tomllib
 import emoji
@@ -534,4 +533,5 @@ elif page =="Business Case Study":
                          color_discrete_sequence=px.colors.sequential.Agsunset,
                          hover_data=['Total_Users'])
             fig.update_traces(textposition='inside', textinfo='percent+label')
+
             st.plotly_chart(fig,use_container_width=True)
