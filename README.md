@@ -44,36 +44,8 @@ We create a web app to analyse the Phonepe transaction and users depending on va
 **a) Extract data**
 
 The extraction phase involves reading data from a specified directory structure.
+<img width="487" height="646" alt="image" src="https://github.com/user-attachments/assets/cdabe125-4b10-4469-b584-119482ca7a2e" />
 
-Phonepay_project/
-├── .streamlit/
-├── data/
-│   └── aggregated/
-│       └── insurance/
-│           └── country/
-│               └── india/
-│                   ├── 2020/
-│                   ├── 2021/
-│                   ├── 2022/
-│                   ├── 2023/
-│                   └── 2024/
-│                   └── state/
-│                       ├── andaman-&-nicobar-islands/
-│                       │   ├── 2020/
-│                       │   │   ├── 2.json
-│                       │   │   ├── 3.json
-│                       │   │   └── 4.json
-│                       │   ├── 2021/
-│                       │   ├── 2022/
-│                       │   ├── 2023/
-│                       │   └── 2024/
-│                       ├── andhra-pradesh/
-│                       ├── arunachal-pradesh/
-│                       ├── assam/
-│                       ├── bihar/
-│                       ├── chandigarh/
-│                       ├── chhattisgarh/
-│                       ├── dadra-&-nag
 
 **b) Process and Transform the data**
 
