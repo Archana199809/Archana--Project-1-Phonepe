@@ -33,7 +33,6 @@ We create a web app to analyse the Phonepe transaction and users depending on va
   
   **d) Visualization**
   - plotly.express
-  - plotly.graph_objects
   
   **e) Image Processing**
   - PIL (Pillow library - from PIL import Image)
