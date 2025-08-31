@@ -455,15 +455,17 @@ elif page =="Business Case Study":
             cursor.execute(f"select Pincodes, sum(Transaction_count) as Total_Transactions_Count, sum(Transaction_amount) as Total from top_transaction where Years = {year} and Quarter = {Quarter} group by Pincodes order by Total desc limit 10")
             df = pd.DataFrame(cursor.fetchall(), columns=['Pincodes', 'Transaction_count','Total_Amount'])
             df[["Transaction_count","Total_Amount"]]= df[["Transaction_count","Total_Amount"]].astype(int)
-            fig = px.bar(df,
+
+
+            fig = px.pie(df,
+                         values='Total_Amount',
+                         names='Pincodes',
                          title='Top 10 Pincodes',
-                         x="District",
-                         y="Pincodes",
-                         orientation='v',
-                         color_discrete_sequence=px.colors.sequential.Agsunset
-                         )
-        
+                         color_discrete_sequence=px.colors.sequential.Agsunset,
+                         hover_data=['Total_Amount'])
+            fig.update_traces(textposition='inside', textinfo='percent+label')
             st.plotly_chart(fig,use_container_width=True)
+        
 #SCENARIO 5        
     if selected_option == '5.User Registration Analysis':
        
@@ -532,6 +534,4 @@ elif page =="Business Case Study":
                          color_discrete_sequence=px.colors.sequential.Agsunset,
                          hover_data=['Total_Users'])
             fig.update_traces(textposition='inside', textinfo='percent+label')
-
             st.plotly_chart(fig,use_container_width=True)
-
