@@ -75,7 +75,7 @@ elif page =="Business Case Study":
         st.subheader('Total Transaction Amount Analysis')
         col1, col2 = st.columns(2)
         with col1:
-         year = st.selectbox("*Year*", options=list(range(2018, 2023)))
+         year = st.selectbox("*Year*", options=list(range(2018, 2025)))
         with col2:
          Quarter = st.selectbox("Quarter", options=[1,2,3,4])
         col1,col2 = st.columns(2)
@@ -164,7 +164,7 @@ elif page =="Business Case Study":
 
 #BAR CHART -QUATER WISE TRANSACTION AMOUNT
         st.title("Trend Analysis")
-        year = st.selectbox("*Year*", options=list(range(2018, 2023)),key=year)
+        year = st.selectbox("*Year*", options=list(range(2018, 2025)),key=year)
         cursor.execute(f"select Years,Quarter, sum(Transaction_amount) as Total_Transaction_Amount from aggregated_transaction where Years= {year} group by Quarter order by Quarter ")
         df = pd.DataFrame(cursor.fetchall(), columns=['Years','Quarter','Total_Transaction_Amount'])
        
@@ -189,7 +189,7 @@ elif page =="Business Case Study":
 
         col1, col2 = st.columns(2)
         with col1:
-         year = st.selectbox("*Year*", options=list(range(2018, 2023)))
+         year = st.selectbox("*Year*", options=list(range(2018, 2025)))
         with col2:
          Quarter = st.selectbox("Quarter", options=[1,2,3,4])
         
@@ -288,7 +288,7 @@ elif page =="Business Case Study":
 
 #BAR CHART TOTAL APP OPENS-QUARTER WISE
         st.title("Trend Analysis")
-        year = st.selectbox("*Year*", options=list(range(2018, 2023)),key=year)
+        year = st.selectbox("*Year*", options=list(range(2018, 2025)),key=year)
         cursor.execute(f"select Years,Quarter, sum(Appopens) as Total_Appopens from map_user where Years= {year} group by Quarter order by Quarter ")
         df = pd.DataFrame(cursor.fetchall(), columns=['Years','Quarter','Total_Appopens'])
        
@@ -312,7 +312,7 @@ elif page =="Business Case Study":
 
         col1, col2 = st.columns(2)
         with col1:
-         year = st.selectbox("*Year*", options=list(range(2020, 2023)),key='yearselect')
+         year = st.selectbox("*Year*", options=list(range(2020, 2025)),key='yearselect')
         with col2:
          Quarter = st.selectbox("Quarter", options=[1,2,3,4],key='Quarterselect')
         col3,col4 = st.columns(2) 
@@ -388,7 +388,7 @@ elif page =="Business Case Study":
 
 #BAR CHART QUARTER WISE -TOTAL INSURANCE AMOUNT
         st.title("Trend Analysis")
-        year = st.selectbox("*Year*", options=list(range(2020, 2023)),key=year)
+        year = st.selectbox("*Year*", options=list(range(2020, 2025)),key=year)
         cursor.execute(f"select Years,quarter,sum(Insurance_amount) as Total_Insurance_Amount from map_insurance where Years = {year} group by Quarter order by Quarter")        
         df = pd.DataFrame(cursor.fetchall(), columns=['Years', 'Quarter','Total_Insurance_Amount'])
        
@@ -409,7 +409,7 @@ elif page =="Business Case Study":
         
         col1,col2=st.columns(2)
         with col1:
-         year = st.selectbox("*Year*", options=list(range(2018, 2023)),key="year_selector")
+         year = st.selectbox("*Year*", options=list(range(2018, 2025)),key="year_selector")
         with col2:
          Quarter = st.selectbox("Quarter", options=[1,2,3,4],key="quarter_selector")
         tab1,tab2,tab3 = st.tabs(["***Top States***","***Top Districts***","***Top Pincodes***" ])
@@ -471,7 +471,7 @@ elif page =="Business Case Study":
        
         col1,col2=st.columns(2)
         with col1:
-         year = st.selectbox("*Year*", options=list(range(2018, 2023)),key="year_selector")
+         year = st.selectbox("*Year*", options=list(range(2018, 2025)),key="year_selector")
         with col2:
          Quarter = st.selectbox("Quarter", options=[1,2,3,4],key="quarter_selector")
         tab1,tab2,tab3,tab4 = st.tabs(["***Top Brands***","***Top States***","***Top Districts***","***Top Pincodes***"])
