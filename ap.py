@@ -4,7 +4,6 @@ import pandas as pd
 import json
 import streamlit as st
 import requests
-import psycopg2
 import plotly.express as px
 from PIL import Image
 import emoji
@@ -535,3 +534,4 @@ elif page =="Business Case Study":
                          hover_data=['Total_Users'])
             fig.update_traces(textposition='inside', textinfo='percent+label')
             st.plotly_chart(fig,use_container_width=True)
+
